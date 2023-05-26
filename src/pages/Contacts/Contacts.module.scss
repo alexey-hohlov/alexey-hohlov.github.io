@@ -1,0 +1,27 @@
+.contacts {
+    width: 100vw;
+    max-width: 100%;
+    background: #333452;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-family: RalewayBold;
+        font-size: 40px;
+        color: #e73680;
+        margin-top: 70px;
+    }
+
+    p {
+        color: #61f4de;
+        font-family: RalewaySemiBold;
+        font-size: 18px;
+    }
+
+    form {
+        margin-bottom: 70px;
+    }
+}

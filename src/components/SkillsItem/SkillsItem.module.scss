@@ -1,0 +1,13 @@
+.item {
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 120px;
+        height: 120px;
+    }
+
+    span {
+        font-family: RalewaySemiBold;
+    }
+}

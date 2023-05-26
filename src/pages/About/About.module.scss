@@ -1,0 +1,46 @@
+.about {
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 1280px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    img {
+        height: 310px;
+        border-radius: 40px;
+        pointer-events: none;
+        user-select: none;
+        box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.25);
+    }
+}
+
+.text {
+    font-size: 1.6em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bullets {
+    align-self: start;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    justify-content: space-between;
+}

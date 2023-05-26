@@ -1,0 +1,60 @@
+.button {
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1em;
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.white {
+    border: solid 1px white;
+    color: white;
+    transition: background 150ms linear;
+
+    &:hover {
+        background: white;
+        color: #1f2041;
+    }
+
+    &:active {
+        background: transparent;
+        color: white;
+    }
+}
+
+.crimson {
+    border: solid 1px #e73680;
+    color: #e73680;
+    transition: background 150ms linear;
+
+    &:hover {
+        background: #e73680;
+        color: white;
+    }
+
+    &:active {
+        background: transparent;
+        color: #e73680;
+    }
+}
+
+.blue {
+    border: solid 1px #5688C7;
+    color: #5688C7;
+    transition: background 150ms linear;
+
+    &:hover {
+        background: #5688C7;
+        color: white;
+    }
+
+    &:active {
+        background: transparent;
+        color: #5688C7;
+    }
+}
