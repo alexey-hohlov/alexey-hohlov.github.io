@@ -10,16 +10,20 @@ import {
 import { aboutBullets } from '../../data/listItems';
 
 const About: React.FC = () => {
+    const motionProps = {
+        initial: 'hidden',
+        whileInView: 'visible',
+        viewport: {
+            amount: 0.5,
+            once: true,
+        },
+    };
+
+    //Transorm Bullet to Motion Component
     const MBullet = motion(Bullet);
 
     return (
-        <motion.section
-            className={styles.about}
-            id={'about'}
-            initial={'hidden'}
-            whileInView={'visible'}
-            viewport={{ amount: 0.5 }}
-        >
+        <motion.section className={styles.about} id={'about'} {...motionProps}>
             <div className={styles.content}>
                 <div className={styles.info}>
                     <motion.img src={photo} alt='' variants={imgAnimation} />
@@ -34,12 +38,7 @@ const About: React.FC = () => {
                         </motion.p>
                     </div>
                 </div>
-                <motion.ul
-                    className={styles.bullets}
-                    initial={'hidden'}
-                    whileInView={'visible'}
-                    viewport={{ amount: 0.5 }}
-                >
+                <motion.ul className={styles.bullets} {...motionProps}>
                     {aboutBullets.map((bullet, index) => (
                         <MBullet
                             variants={bulletsAnimation}
