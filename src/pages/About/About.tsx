@@ -6,7 +6,7 @@ import {
     bulletsAnimation,
     imgAnimation,
     textAnimation,
-} from '../../utils/animations';
+} from '../../utils/animations/aboutAnimations';
 import { aboutBullets } from '../../data/listItems';
 
 const About: React.FC = () => {

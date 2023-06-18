@@ -1,27 +1,51 @@
+import { motion } from 'framer-motion';
 import { SkillsFooter } from '../../assets';
 import { SkillsItem } from '../../components';
 import { skillsItems } from '../../data/listItems';
 import styles from './Skills.module.scss';
+import {
+    itemAnimation,
+    textAnimation,
+} from '../../utils/animations/skillsAnimations';
 
 const Skills: React.FC = () => {
+    const motionProps = {
+        initial: 'hidden',
+        whileInView: 'visible',
+        viewport: {
+            amount: 0.5,
+            once: true,
+        },
+    };
+
+    const MSkillsItem = motion(SkillsItem);
+
     return (
-        <section className={styles.skills} id={'skills'}>
+        <motion.section
+            className={styles.skills}
+            id={'skills'}
+            {...motionProps}
+        >
             <div className={styles.content}>
                 <div className={styles.text}>
-                    <h1>Технологический стек и навыки</h1>
-                    <p>
+                    <motion.h1 variants={textAnimation} custom={1}>
+                        Технологический стек и навыки
+                    </motion.h1>
+                    <motion.p variants={textAnimation} custom={2}>
                         Люблю писать на TypeScript. Умею адаптивно верстать с
                         использованием препроцессоров, уделяю внимание семантике
-                    </p>
-                    <p>
+                    </motion.p>
+                    <motion.p variants={textAnimation} custom={3}>
                         Владею React и Redux, а так же другими, представленными
                         здесь, технологиями
-                    </p>
+                    </motion.p>
                 </div>
 
                 <ul>
-                    {skillsItems.map(item => (
-                        <SkillsItem
+                    {skillsItems.map((item, index) => (
+                        <MSkillsItem
+                            variants={itemAnimation}
+                            custom={index + 1}
                             title={item.title}
                             icon={item.icon}
                             key={item.title}
@@ -30,7 +54,7 @@ const Skills: React.FC = () => {
                 </ul>
             </div>
             <SkillsFooter className={styles.footer} />
-        </section>
+        </motion.section>
     );
 };
 
