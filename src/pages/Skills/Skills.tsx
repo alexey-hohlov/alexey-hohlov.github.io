@@ -3,10 +3,7 @@ import { SkillsFooter } from '../../assets';
 import { SkillsItem } from '../../components';
 import { skillsItems } from '../../data/listItems';
 import styles from './Skills.module.scss';
-import {
-    itemAnimation,
-    textAnimation,
-} from '../../utils/animations/skillsAnimations';
+import { scale, slideFromLeft } from '../../utils/animations';
 
 const Skills: React.FC = () => {
     const motionProps = {
@@ -28,14 +25,14 @@ const Skills: React.FC = () => {
         >
             <div className={styles.content}>
                 <div className={styles.text}>
-                    <motion.h1 variants={textAnimation} custom={1}>
+                    <motion.h1 variants={slideFromLeft} custom={1}>
                         Технологический стек и навыки
                     </motion.h1>
-                    <motion.p variants={textAnimation} custom={2}>
+                    <motion.p variants={slideFromLeft} custom={2}>
                         Люблю писать на TypeScript. Умею адаптивно верстать с
                         использованием препроцессоров, уделяю внимание семантике
                     </motion.p>
-                    <motion.p variants={textAnimation} custom={3}>
+                    <motion.p variants={slideFromLeft} custom={3}>
                         Владею React и Redux, а так же другими, представленными
                         здесь, технологиями
                     </motion.p>
@@ -44,7 +41,7 @@ const Skills: React.FC = () => {
                 <ul>
                     {skillsItems.map((item, index) => (
                         <MSkillsItem
-                            variants={itemAnimation}
+                            variants={scale}
                             custom={index + 1}
                             title={item.title}
                             icon={item.icon}

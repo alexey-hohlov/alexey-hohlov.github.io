@@ -4,8 +4,11 @@ import { defaultValues } from './defaultValues';
 import { Button, Input, TextArea } from '../../components';
 import emailjs from '@emailjs/browser';
 import styles from './Form.module.scss';
+import { forwardRef } from 'react';
 
-const Form: React.FC = () => {
+type Ref = HTMLFormElement;
+
+const Form = forwardRef<Ref>((props, ref) => {
     const methods = useForm({ mode: 'onSubmit', defaultValues });
 
     const onSubmit = methods.handleSubmit(data => {
@@ -28,7 +31,7 @@ const Form: React.FC = () => {
 
     return (
         <FormProvider {...methods}>
-            <form className={styles.form}>
+            <form className={styles.form} ref={ref}>
                 <div className={styles.inputs}>
                     <Input
                         placeholder={'Email'}
@@ -50,6 +53,6 @@ const Form: React.FC = () => {
             </form>
         </FormProvider>
     );
-};
+});
 
 export default Form;

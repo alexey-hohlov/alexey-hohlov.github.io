@@ -1,9 +1,11 @@
-// ABOUT SECTION
-export const textAnimation = {
-    hidden: { opacity: 0, scale: 0.5 },
+export const slideFromLeft = {
+    hidden: {
+        opacity: 0,
+        x: -100,
+    },
     visible: (custom: number) => ({
         opacity: 1,
-        scale: 1,
+        x: 1,
         transition: {
             delay: custom * 0.2,
             type: 'spring',
@@ -12,22 +14,23 @@ export const textAnimation = {
     }),
 };
 
-export const imgAnimation = {
+export const slideFromRight = {
     hidden: {
         opacity: 0,
-        x: -100,
+        x: 100,
     },
-    visible: {
+    visible: (custom: number) => ({
         opacity: 1,
-        x: 0,
+        x: 1,
         transition: {
+            delay: custom * 0.2,
             type: 'spring',
-            duration: 0.9,
+            duration: 0.85,
         },
-    },
+    }),
 };
 
-export const bulletsAnimation = {
+export const slideFromBottom = {
     hidden: {
         opacity: 0,
         y: 100,
@@ -35,6 +38,19 @@ export const bulletsAnimation = {
     visible: (custom: number) => ({
         opacity: 1,
         y: 1,
+        transition: {
+            delay: custom * 0.2,
+            type: 'spring',
+            duration: 0.85,
+        },
+    }),
+};
+
+export const scale = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: (custom: number) => ({
+        opacity: 1,
+        scale: 1,
         transition: {
             delay: custom * 0.2,
             type: 'spring',

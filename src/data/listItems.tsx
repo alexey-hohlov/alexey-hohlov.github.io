@@ -2,6 +2,7 @@ import {
     CodeIcon,
     CssIcon,
     FigmaIcon,
+    GitHubIcon,
     GitIcon,
     HtmlIcon,
     JavaScriptIcon,
@@ -11,7 +12,9 @@ import {
     ReduxIcon,
     RocketIcon,
     SassIcon,
+    TelegramIcon,
     TypeScriptIcon,
+    VKIcon,
 } from '../assets';
 
 export const aboutBullets = [
@@ -47,4 +50,18 @@ export const skillsItems = [
     { title: 'HTML', icon: <HtmlIcon /> },
     { title: 'Git', icon: <GitIcon /> },
     { title: 'Figma', icon: <FigmaIcon /> },
+];
+
+export const socials = [
+    {
+        title: 'Github',
+        icon: <GitHubIcon />,
+        href: 'https://github.com/alexey-hohlov',
+    },
+    {
+        title: 'Telegram',
+        icon: <TelegramIcon />,
+        href: 'https://t.me/alexeyOD',
+    },
+    { title: 'Vk', icon: <VKIcon />, href: 'https://vk.com/ypoenie' },
 ];
