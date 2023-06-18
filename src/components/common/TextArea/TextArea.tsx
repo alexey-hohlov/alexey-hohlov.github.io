@@ -20,7 +20,7 @@ const TextArea: React.FC<Props> = ({ placeholder, name, validations }) => {
                 {...field}
                 placeholder={placeholder}
             ></textarea>
-            <span>{error && error.message}</span>
+            {error && <span>{error.message}</span>}
         </div>
     );
 };

@@ -21,7 +21,7 @@ const Input: React.FC<Props> = ({ placeholder, name, validations }) => {
                 {...field}
                 placeholder={placeholder}
             />
-            <span>{error && error.message}</span>
+            {error && <span>{error.message}</span>}
         </div>
     );
 };

@@ -1,31 +1,9 @@
-import {
-    CssIcon,
-    FigmaIcon,
-    GitIcon,
-    HtmlIcon,
-    JavaScriptIcon,
-    ReactIcon,
-    ReduxIcon,
-    SassIcon,
-    SkillsFooter,
-    TypeScriptIcon,
-} from '../../assets';
+import { SkillsFooter } from '../../assets';
 import { SkillsItem } from '../../components';
+import { skillsItems } from '../../data/listItems';
 import styles from './Skills.module.scss';
 
 const Skills: React.FC = () => {
-    const skills = [
-        { title: 'TypeScript', icon: <TypeScriptIcon /> },
-        { title: 'JavaScript', icon: <JavaScriptIcon /> },
-        { title: 'React', icon: <ReactIcon /> },
-        { title: 'Redux', icon: <ReduxIcon /> },
-        { title: 'CSS', icon: <CssIcon /> },
-        { title: 'Sass / Scss', icon: <SassIcon /> },
-        { title: 'HTML', icon: <HtmlIcon /> },
-        { title: 'Git', icon: <GitIcon /> },
-        { title: 'Figma', icon: <FigmaIcon /> },
-    ];
-
     return (
         <section className={styles.skills} id={'skills'}>
             <div className={styles.content}>
@@ -33,7 +11,7 @@ const Skills: React.FC = () => {
                     <h1>Технологический стек и навыки</h1>
                     <p>
                         Люблю писать на TypeScript. Умею адаптивно верстать с
-                        использованием препроцессоров
+                        использованием препроцессоров, уделяю внимание семантике
                     </p>
                     <p>
                         Владею React и Redux, а так же другими, представленными
@@ -42,7 +20,7 @@ const Skills: React.FC = () => {
                 </div>
 
                 <ul>
-                    {skills.map(item => (
+                    {skillsItems.map(item => (
                         <SkillsItem
                             title={item.title}
                             icon={item.icon}

@@ -16,6 +16,8 @@ const Button: React.FC<Props> = ({ title, onClick, color, isDisabled }) => {
                 return styles.blue;
             case 'crimson':
                 return styles.crimson;
+            case 'teal':
+                return styles.teal;
             default:
                 break;
         }

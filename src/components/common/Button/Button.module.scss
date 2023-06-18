@@ -1,5 +1,5 @@
 .button {
-    border-radius: 10px;
+    border-radius: 7px;
     background: transparent;
     cursor: pointer;
     user-select: none;
@@ -44,17 +44,33 @@
 }
 
 .blue {
-    border: solid 1px #5688C7;
-    color: #5688C7;
+    border: solid 1px #5688c7;
+    color: #5688c7;
     transition: background 150ms linear;
 
     &:hover {
-        background: #5688C7;
+        background: #5688c7;
         color: white;
     }
 
     &:active {
         background: transparent;
-        color: #5688C7;
+        color: #5688c7;
+    }
+}
+
+.teal {
+    border: solid 1px #61f4de;
+    color: #61f4de;
+    transition: background 150ms linear;
+
+    &:hover {
+        background: #61f4de;
+        color: #1F2041;
+    }
+
+    &:active {
+        background: transparent;
+        color: #61f4de;
     }
 }

@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import styles from './Form.module.scss';
 
 const Form: React.FC = () => {
-    const methods = useForm({ mode: 'onTouched', defaultValues });
+    const methods = useForm({ mode: 'onSubmit', defaultValues });
 
     const onSubmit = methods.handleSubmit(data => {
         emailjs
@@ -28,7 +28,7 @@ const Form: React.FC = () => {
 
     return (
         <FormProvider {...methods}>
-            <form className={styles.form} onSubmit={onSubmit}>
+            <form className={styles.form}>
                 <div className={styles.inputs}>
                     <Input
                         placeholder={'Email'}
@@ -46,19 +46,7 @@ const Form: React.FC = () => {
                         validations={validations.text}
                     />
                 </div>
-                <div className={styles.buttons}>
-                    <Button
-                        title={'Отправить'}
-                        onClick={onSubmit}
-                        color={'blue'}
-                        isDisabled={!methods.formState.isValid}
-                    />
-                    <Button
-                        title={'Сброс'}
-                        onClick={() => {}}
-                        color={'blue'}
-                    />
-                </div>
+                <Button title={'Отправить'} onClick={onSubmit} color={'teal'} />
             </form>
         </FormProvider>
     );
