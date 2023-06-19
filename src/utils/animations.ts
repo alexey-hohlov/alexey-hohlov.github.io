@@ -1,3 +1,5 @@
+// framer-motion animations presets
+
 export const slideFromLeft = {
     hidden: {
         opacity: 0,
@@ -55,6 +57,18 @@ export const scale = {
             delay: custom * 0.2,
             type: 'spring',
             duration: 0.85,
+        },
+    }),
+};
+
+export const appear = {
+    hidden: { opacity: 0 },
+    visible: (custom: number) => ({
+        opacity: 1,
+        transition: {
+            delay: custom * 0.2,
+            type: 'spring',
+            duration: 2,
         },
     }),
 };
