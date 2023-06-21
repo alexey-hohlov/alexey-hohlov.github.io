@@ -33,7 +33,7 @@ const Form = forwardRef<Ref>((props, ref) => {
                     setTimeout(() => {
                         dispatch(setEmailStatus(''));
                         dispatch(setPopup(false));
-                    }, 2000);
+                    }, 1500);
                 },
                 function (error) {
                     // console.log('FAILED...', error);
@@ -41,7 +41,7 @@ const Form = forwardRef<Ref>((props, ref) => {
                     setTimeout(() => {
                         dispatch(setEmailStatus(''));
                         dispatch(setPopup(false));
-                    }, 2000);
+                    }, 1500);
                 }
             );
     });

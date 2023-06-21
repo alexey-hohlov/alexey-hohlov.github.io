@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { Modal } from '../';
 import { DoneIcon, ErrorIcon, LoadingSpinner } from '../../assets';
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
-import { emailSlice } from '../../store/reducers/emailReducer';
+import { useAppSelector } from '../../hooks/reduxHooks';
 import styles from './EmailPopup.module.scss';
 import {
     appear,
@@ -13,11 +12,9 @@ import {
 
 const EmailPopup: React.FC = () => {
     const { popup, status } = useAppSelector(state => state.emailReducer);
-    const { setPopup } = emailSlice.actions;
-    const dispatch = useAppDispatch();
 
     const handleClose = () => {
-        dispatch(setPopup(false));
+        // will close automatically
     };
 
     const motionProps = {
@@ -34,7 +31,6 @@ const EmailPopup: React.FC = () => {
             case 'loading':
                 return (
                     <>
-                        {/* <LoadingSpinner className={styles.spinner} /> */}
                         <MLoadingSpinner
                             variants={loadingSpinner}
                             initial={'hidden'}

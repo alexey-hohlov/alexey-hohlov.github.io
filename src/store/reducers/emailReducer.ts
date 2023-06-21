@@ -4,8 +4,6 @@ import { IEmail } from '../../types/storeTypes';
 const initialState: IEmail = {
     popup: false,
     status: '',
-    // popup: true,
-    // status: 'success',
 };
 
 export const emailSlice = createSlice({

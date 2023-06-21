@@ -3,8 +3,6 @@ import { SocialItem, UpButton } from '../';
 import { socials } from '../../data/listItems';
 import styles from './Footer.module.scss';
 import { scale, slideFromBottom } from '../../utils/animations';
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
-import { emailSlice } from '../../store/reducers/emailReducer';
 
 const Footer: React.FC = () => {
     const motionProps = {
@@ -18,25 +16,8 @@ const Footer: React.FC = () => {
 
     const MUpButton = motion(UpButton);
 
-    const { setPopup, setEmailStatus } = emailSlice.actions;
-    const dispatch = useAppDispatch();
-
-    const handleClose = () => {
-        dispatch(setPopup(false));
-    };
-
-    const test = () => {
-        dispatch(setPopup(true));
-        dispatch(setEmailStatus('loading'));
-        setTimeout(() => {
-            dispatch(setEmailStatus(''));
-            dispatch(setEmailStatus('success'));
-        }, 2000);
-    };
-
     return (
         <motion.footer className={styles.footer} {...motionProps}>
-            <button onClick={test}>TEST</button>
             <MUpButton variants={scale} custom={1} />
             <motion.ul
                 className={styles.socials}
