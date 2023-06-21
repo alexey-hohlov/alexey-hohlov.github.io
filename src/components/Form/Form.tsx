@@ -5,13 +5,20 @@ import { Button, Input, TextArea } from '../../components';
 import emailjs from '@emailjs/browser';
 import styles from './Form.module.scss';
 import { forwardRef } from 'react';
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { emailSlice } from '../../store/reducers/emailReducer';
 
 type Ref = HTMLFormElement;
 
 const Form = forwardRef<Ref>((props, ref) => {
     const methods = useForm({ mode: 'onSubmit', defaultValues });
 
+    const { setPopup, setEmailStatus } = emailSlice.actions;
+    const dispatch = useAppDispatch();
+
     const onSubmit = methods.handleSubmit(data => {
+        dispatch(setPopup(true));
+        dispatch(setEmailStatus('loading'));
         emailjs
             .send(
                 'service_f64d5z9',
@@ -21,10 +28,20 @@ const Form = forwardRef<Ref>((props, ref) => {
             )
             .then(
                 function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                    // console.log('SUCCESS!', response.status, response.text);
+                    dispatch(setEmailStatus('success'));
+                    setTimeout(() => {
+                        dispatch(setEmailStatus(''));
+                        dispatch(setPopup(false));
+                    }, 2000);
                 },
                 function (error) {
-                    console.log('FAILED...', error);
+                    // console.log('FAILED...', error);
+                    dispatch(setEmailStatus('error'));
+                    setTimeout(() => {
+                        dispatch(setEmailStatus(''));
+                        dispatch(setPopup(false));
+                    }, 2000);
                 }
             );
     });

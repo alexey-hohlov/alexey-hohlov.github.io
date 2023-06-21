@@ -4,6 +4,8 @@ import { IEmail } from '../../types/storeTypes';
 const initialState: IEmail = {
     popup: false,
     status: '',
+    // popup: true,
+    // status: 'success',
 };
 
 export const emailSlice = createSlice({
@@ -12,6 +14,9 @@ export const emailSlice = createSlice({
     reducers: {
         setPopup(state, action: PayloadAction<boolean>) {
             state.popup = action.payload;
+        },
+        setEmailStatus(state, action: PayloadAction<string>) {
+            state.status = action.payload;
         },
     },
 });

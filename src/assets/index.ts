@@ -23,3 +23,8 @@ export { ReactComponent as DoubleArrowIcon } from './icons/footer-icons/double-a
 export { ReactComponent as GitHubIcon } from './icons/footer-icons/github-icon.svg';
 export { ReactComponent as TelegramIcon } from './icons/footer-icons/telegram-icon.svg';
 export { ReactComponent as VKIcon } from './icons/footer-icons/vk-icon.svg';
+
+// popup assets
+export { ReactComponent as LoadingSpinner } from './images/loading-spinner.svg';
+export { ReactComponent as DoneIcon } from './images/done-icon.svg';
+export { ReactComponent as ErrorIcon } from './images/error-icon.svg';

@@ -1,23 +1,18 @@
 import { motion } from 'framer-motion';
-import { SkillsFooter } from '../../assets';
-import { EmailPopup, Form } from '../../components';
+import { EmailPopup, Form, Button } from '../../components';
 import styles from './Contacts.module.scss';
 import { scale, slideFromLeft, slideFromRight } from '../../utils/animations';
-import { useState } from 'react';
-
 const Contacts: React.FC = () => {
     const motionProps = {
         initial: 'hidden',
         whileInView: 'visible',
         viewport: {
-            amount: 0.5,
-            once: true,
+            // amount: 0.2,
+            once: false,
         },
     };
 
     const MForm = motion(Form);
-
-    const [isOpen, setIsOpen] = useState(true);
 
     return (
         <motion.section
@@ -32,7 +27,7 @@ const Contacts: React.FC = () => {
                 У вас есть вопрос или хотите поработать вместе?
             </motion.p>
             <MForm variants={scale} />
-            <EmailPopup isOpen={isOpen} />
+            <EmailPopup />
         </motion.section>
     );
 };
