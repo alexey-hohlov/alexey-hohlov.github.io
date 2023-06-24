@@ -16,6 +16,11 @@
     height: 60px;
     border-radius: 10px;
     background: #333452;
+    transition: background 150ms linear;    
+
+    &:hover {
+        background: #3F3F64;
+    }
 
     svg {
         width: 40px;

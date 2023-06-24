@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, forwardRef } from 'react';
 import styles from './SocialItem.module.scss';
 
 interface Props {
