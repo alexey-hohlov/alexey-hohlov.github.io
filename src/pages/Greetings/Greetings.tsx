@@ -8,7 +8,7 @@ const Greetings: React.FC = () => {
     const particles = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     const handleClick = () => {
-        scroller.scrollTo('about', { smooth: true });
+        scroller.scrollTo('about', { smooth: true, duration: 600 });
     };
 
     const MButton = motion(Button);
@@ -32,7 +32,13 @@ const Greetings: React.FC = () => {
                     <br />Я<span> front-end </span>
                     разработчик.
                 </motion.div>
-                <MButton title={'Далее'} onClick={handleClick} color={'white'} variants={scale} custom={2}/>
+                <MButton
+                    title={'Далее'}
+                    onClick={handleClick}
+                    color={'white'}
+                    variants={scale}
+                    custom={2}
+                />
             </div>
             <ul className={styles.particles}>
                 {particles.map(particle => (

@@ -8,7 +8,7 @@ type Ref = HTMLButtonElement;
 
 const UpButton = forwardRef<Ref>((props, ref) => {
     const handleClick = () => {
-        scroller.scrollTo('greetings', { smooth: true });
+        scroller.scrollTo('greetings', { smooth: true, duration: 600 });
     };
 
     return (

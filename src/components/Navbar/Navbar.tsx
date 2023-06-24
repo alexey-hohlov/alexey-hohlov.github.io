@@ -19,6 +19,7 @@ const Navbar: React.FC = () => {
                             activeClass={styles.active}
                             smooth={true}
                             spy={true}
+                            duration={600}
                         >
                             {link.title}
                         </Link>
