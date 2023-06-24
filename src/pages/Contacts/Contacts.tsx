@@ -7,7 +7,7 @@ const Contacts: React.FC = () => {
         initial: 'hidden',
         whileInView: 'visible',
         viewport: {
-            // amount: 0.2,
+            amount: 0.4,
             once: false,
         },
     };
