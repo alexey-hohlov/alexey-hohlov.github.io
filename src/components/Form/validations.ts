@@ -7,15 +7,15 @@ export const validations = {
     email: {
         required: errorMessage,
         pattern: {
-            value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+            value: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g,
             message: 'Некорректный формат email',
         },
     },
-    text: {
+    message: {
         required: errorMessage,
         minLength: {
             value: 5,
-            message: 'Минимальная длина сообщения - 10 символов'
+            message: 'Минимальная длина сообщения - 10 символов',
         },
     },
 };

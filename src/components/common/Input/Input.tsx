@@ -1,10 +1,11 @@
 import { useController } from 'react-hook-form';
 import styles from './Input.module.scss';
+import { IValidations } from '../../../types/formTypes';
 
 interface Props {
     placeholder: string;
     name: string;
-    validations: any;
+    validations: IValidations;
 }
 
 const Input: React.FC<Props> = ({ placeholder, name, validations }) => {

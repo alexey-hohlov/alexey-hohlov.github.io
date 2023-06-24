@@ -5,8 +5,9 @@ import { Button, Input, TextArea } from '../../components';
 import emailjs from '@emailjs/browser';
 import styles from './Form.module.scss';
 import { forwardRef } from 'react';
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { useAppDispatch } from '../../hooks/reduxHooks';
 import { emailSlice } from '../../store/reducers/emailReducer';
+import { IEmailForm } from '../../types/formTypes';
 
 type Ref = HTMLFormElement;
 
@@ -16,35 +17,35 @@ const Form = forwardRef<Ref>((props, ref) => {
     const { setPopup, setEmailStatus } = emailSlice.actions;
     const dispatch = useAppDispatch();
 
-    const onSubmit = methods.handleSubmit(data => {
+    const sendEmail = async (data: IEmailForm) => {
+        //copying array to avoid type redefinition
+        //emailjs wants Record<string, unknown> for template params
+        const template_params = { ...data };
+
         dispatch(setPopup(true));
         dispatch(setEmailStatus('loading'));
-        emailjs
-            .send(
+        try {
+            await emailjs.send(
                 'service_f64d5z9',
                 'template_02urki4',
-                data,
+                template_params,
                 'p6jWYzNc2SUeOsgSH'
-            )
-            .then(
-                function (response) {
-                    // console.log('SUCCESS!', response.status, response.text);
-                    dispatch(setEmailStatus('success'));
-                    setTimeout(() => {
-                        dispatch(setEmailStatus(''));
-                        dispatch(setPopup(false));
-                    }, 1500);
-                },
-                function (error) {
-                    // console.log('FAILED...', error);
-                    dispatch(setEmailStatus('error'));
-                    setTimeout(() => {
-                        dispatch(setEmailStatus(''));
-                        dispatch(setPopup(false));
-                    }, 1500);
-                }
             );
-    });
+            dispatch(setEmailStatus('success'));
+            methods.reset();
+            setTimeout(() => {
+                dispatch(setEmailStatus(''));
+                dispatch(setPopup(false));
+            }, 1500);
+        } catch (error) {
+            console.log(error);
+            dispatch(setEmailStatus('error'));
+            setTimeout(() => {
+                dispatch(setEmailStatus(''));
+                dispatch(setPopup(false));
+            }, 1500);
+        }
+    };
 
     return (
         <FormProvider {...methods}>
@@ -62,11 +63,15 @@ const Form = forwardRef<Ref>((props, ref) => {
                     />
                     <TextArea
                         placeholder={'Ваше сообщение'}
-                        name={'text'}
-                        validations={validations.text}
+                        name={'message'}
+                        validations={validations.message}
                     />
                 </div>
-                <Button title={'Отправить'} onClick={onSubmit} color={'teal'} />
+                <Button
+                    title={'Отправить'}
+                    onClick={methods.handleSubmit(sendEmail)}
+                    color={'teal'}
+                />
             </form>
         </FormProvider>
     );
