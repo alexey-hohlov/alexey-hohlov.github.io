@@ -33,3 +33,32 @@
 .active {
     color: #e73680;
 }
+
+@media screen and (max-width: 970px) {
+    .navbar {
+        ul {
+            padding: {
+                left: 20px;
+                right: 20px;
+            }
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navbar {
+        ul {
+            gap: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        ul {
+           gap: unset;
+           justify-content: space-between;
+        }
+    }
+}
