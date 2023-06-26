@@ -8,6 +8,8 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    padding: 15px;
+    text-align: center;
 
     h1 {
         font-family: RalewayBold;
@@ -24,5 +26,15 @@
 
     form {
         margin-bottom: 70px;
+        min-width: 500px;
+    }
+}
+
+@media screen and  (max-width: 640px) {
+    .contacts {
+        form {
+            min-width: unset;
+            width: 100%;
+        }
     }
 }

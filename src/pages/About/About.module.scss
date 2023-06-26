@@ -100,3 +100,11 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .info {
+        img {
+            height: 200px;
+        }
+    }
+}
