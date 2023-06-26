@@ -19,7 +19,6 @@ const About: React.FC = () => {
         },
     };
 
-    //Transorm Bullet to Motion Component
     const MBullet = motion(Bullet);
 
     return (
