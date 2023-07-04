@@ -6,9 +6,16 @@
 
     svg {
         fill: #5688c7;
+        transition: fill 200ms linear;
     }
 
     p {
         text-align: center;
+    }
+
+    &:hover {
+        svg {
+            fill: tomato;
+        }
     }
 }
