@@ -1,13 +1,9 @@
 import styles from './About.module.scss';
-import photo from '../../assets/images/photo.png';
-import { Bullet } from '../../components';
+import photo from '../../assets/images/photo-02.png';
+import { Bullet, Carousel } from '../../components';
 import { motion } from 'framer-motion';
 import { aboutBullets } from '../../data/listItems';
-import {
-    scale,
-    slideFromBottom,
-    slideFromLeft,
-} from '../../utils/animations';
+import { scale, slideFromBottom, slideFromLeft } from '../../utils/animations';
 
 const About: React.FC = () => {
     const motionProps = {
@@ -25,7 +21,8 @@ const About: React.FC = () => {
         <motion.section className={styles.about} id={'about'} {...motionProps}>
             <div className={styles.content}>
                 <div className={styles.info}>
-                    <motion.img src={photo} alt='' variants={slideFromLeft} />
+                    {/* <motion.img src={photo} alt='' variants={slideFromLeft} /> */}
+                    <Carousel />
                     <div className={styles.text}>
                         <motion.p custom={1} variants={scale}>
                             Я занимаюсь front-end разработкой. Создаю плавные,
