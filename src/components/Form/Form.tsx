@@ -17,19 +17,25 @@ const Form = forwardRef<Ref>((props, ref) => {
     const { setPopup, setEmailStatus } = emailSlice.actions;
     const dispatch = useAppDispatch();
 
+    console.log(process.env.REACT_APP_API_SERVICE_ID);
+
     const sendEmail = async (data: IEmailForm) => {
         //copying array to avoid type redefinition
         //emailjs wants Record<string, unknown> for template params
         const template_params = { ...data };
+        
+        const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID as string;
+        const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string;
+        const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY as string;
 
         dispatch(setPopup(true));
         dispatch(setEmailStatus('loading'));
         try {
             await emailjs.send(
-                'service_f64d5z9',
-                'template_02urki4',
+                SERVICE_ID,
+                TEMPLATE_ID,
                 template_params,
-                'p6jWYzNc2SUeOsgSH'
+                PUBLIC_KEY
             );
             dispatch(setEmailStatus('success'));
             methods.reset();
