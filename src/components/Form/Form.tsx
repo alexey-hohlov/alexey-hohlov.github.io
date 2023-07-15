@@ -17,8 +17,6 @@ const Form = forwardRef<Ref>((props, ref) => {
     const { setPopup, setEmailStatus } = emailSlice.actions;
     const dispatch = useAppDispatch();
 
-    console.log(process.env.REACT_APP_API_SERVICE_ID);
-
     const sendEmail = async (data: IEmailForm) => {
         //copying array to avoid type redefinition
         //emailjs wants Record<string, unknown> for template params
