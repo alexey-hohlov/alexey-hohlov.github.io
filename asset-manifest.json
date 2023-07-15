@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2eaa0f2b.css",
+    "main.js": "/static/js/main.6a811f98.js",
+    "static/media/Raleway-Light.ttf": "/static/media/Raleway-Light.58bcdae09d89ccd8d086.ttf",
+    "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
+    "static/media/Raleway-SemiBold.ttf": "/static/media/Raleway-SemiBold.cc770b2afb65067aae51.ttf",
+    "static/media/Raleway-Bold.ttf": "/static/media/Raleway-Bold.18960343b3da49bfd353.ttf",
+    "static/media/Raleway-SemiBoldItalic.ttf": "/static/media/Raleway-SemiBoldItalic.87b2cd29a7cb14781cae.ttf",
+    "static/media/Raleway-LightItalic.ttf": "/static/media/Raleway-LightItalic.a673b3ada3531cd8e8a8.ttf",
+    "static/media/Raleway-BoldItalic.ttf": "/static/media/Raleway-BoldItalic.1eebed4b223d1adc34ae.ttf",
+    "static/media/Raleway-Italic.ttf": "/static/media/Raleway-Italic.a0018c8a791a6d9b8e3e.ttf",
+    "static/media/photo.jpg": "/static/media/photo.d869d2b0178a0185696e.jpg",
+    "static/media/sass-icon.svg": "/static/media/sass-icon.a8772e532f39da2581b04ef234a328bc.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.8cfb23669f761b6163d57a3d1e3e1f4b.svg",
+    "static/media/typescript-icon.svg": "/static/media/typescript-icon.d788ab623f6715f3658f56a329c81898.svg",
+    "static/media/redux-icon.svg": "/static/media/redux-icon.884eb291f66afcefd13ae83cf1f68aaf.svg",
+    "static/media/git-icon.svg": "/static/media/git-icon.328a5156ebafb7601884e9b6d82c2d8a.svg",
+    "static/media/javascript-icon.svg": "/static/media/javascript-icon.51c8a83a8eb931cf14897e573a2b6120.svg",
+    "static/media/react-icon.svg": "/static/media/react-icon.ed6d04ca95957438293b3b7197c25bdb.svg",
+    "static/media/figma-icon.svg": "/static/media/figma-icon.18830e10c6cacc7d87cb689a74ba9239.svg",
+    "static/media/css-icon.svg": "/static/media/css-icon.a6656609a2cb2023b06807ca101190e5.svg",
+    "static/media/html-icon.svg": "/static/media/html-icon.0b35bc4d434c7af7fb1db45cd69ee290.svg",
+    "static/media/vk-icon.svg": "/static/media/vk-icon.956f9d66a93e8f42844f2ece1be8824b.svg",
+    "static/media/telegram-icon.svg": "/static/media/telegram-icon.14ea4d7ece12b5c94426a85c2ad7f707.svg",
+    "static/media/loading-spinner.svg": "/static/media/loading-spinner.0017230f22681dab6a0b0764689afba0.svg",
+    "static/media/error-icon.svg": "/static/media/error-icon.1f531b52d0d08a345f732a7b4046a353.svg",
+    "static/media/rocket-icon.svg": "/static/media/rocket-icon.f59df845e0195c8e337cf3c49fcdda70.svg",
+    "static/media/lamp-icon.svg": "/static/media/lamp-icon.e8f94bd4027b137ffdbf8a542592194b.svg",
+    "static/media/done-icon.svg": "/static/media/done-icon.5546c6b5af9614a465b1bdee3a663b8f.svg",
+    "index.html": "/index.html",
+    "static/media/layout-icon.svg": "/static/media/layout-icon.49d79a27db83b4b30e6a63590d2debff.svg",
+    "static/media/code-icon.svg": "/static/media/code-icon.b3a46f89980ebee8cf10d133fb646bfa.svg",
+    "static/media/double-arrow-icon.svg": "/static/media/double-arrow-icon.dab1f307fc3e575b7eba58cbcb980b5b.svg",
+    "static/media/skills-footer.svg": "/static/media/skills-footer.f244a3691a983f85561ae0db6b197abf.svg",
+    "main.2eaa0f2b.css.map": "/static/css/main.2eaa0f2b.css.map",
+    "main.6a811f98.js.map": "/static/js/main.6a811f98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2eaa0f2b.css",
+    "static/js/main.6a811f98.js"
+  ]
+}
