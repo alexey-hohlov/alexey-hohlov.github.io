@@ -23,19 +23,15 @@ const Form = forwardRef<Ref>((props, ref) => {
         //copying array to avoid type redefinition
         //emailjs wants Record<string, unknown> for template params
         const template_params = { ...data };
-        
-        const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID as string;
-        const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string;
-        const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY as string;
 
         dispatch(setPopup(true));
         dispatch(setEmailStatus('loading'));
         try {
             await emailjs.send(
-                SERVICE_ID,
-                TEMPLATE_ID,
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
                 template_params,
-                PUBLIC_KEY
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
             );
             dispatch(setEmailStatus('success'));
             methods.reset();
