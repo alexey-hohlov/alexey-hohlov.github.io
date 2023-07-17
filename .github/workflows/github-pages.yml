@@ -23,4 +23,4 @@ jobs:
         git config --global user.name 'Alexey Hohlov'
         git config --global user.email 'alexey.hohl0v@yandex.ru'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        CI="" yarn run deploy
+        CI="" yarn deploy
