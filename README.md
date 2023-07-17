@@ -1,6 +1,7 @@
 # My personal web-page
 
 A web page with information about me, my professional skills, and ways to contact me
+<img width="1512" alt="Снимок экрана 2023-07-18 в 05 04 37" src="https://github.com/alexey-hohlov/alexey-hohlov.github.io/assets/79412122/ad4fb46a-b01f-4628-af29-d031b32e6a9c">
 
 ## 💻 Technologies
 * TypeScript
