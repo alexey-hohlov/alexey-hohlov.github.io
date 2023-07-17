@@ -18,7 +18,6 @@ const Form = forwardRef<Ref>((props, ref) => {
     const dispatch = useAppDispatch();
 
     const sendEmail = async (data: IEmailForm) => {
-        
         //copying array to avoid type redefinition
         //emailjs wants Record<string, unknown> for template params
         const template_params = { ...data };
