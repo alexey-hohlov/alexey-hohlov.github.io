@@ -2,7 +2,9 @@
 
 <p align="center">A web page with information about me, my professional skills, and ways to contact me</p>
 
-<img width="600" align="center" alt="Снимок экрана 2023-07-18 в 05 22 01" src="https://github.com/alexey-hohlov/alexey-hohlov.github.io/assets/79412122/03867d91-8ab2-4638-bc07-7ef6628bfa51">
+<div align="center">
+  <img width="600" align="center" alt="Снимок экрана 2023-07-18 в 05 22 01" src="https://github.com/alexey-hohlov/alexey-hohlov.github.io/assets/79412122/03867d91-8ab2-4638-bc07-7ef6628bfa51">
+</div>
 
 ## 💻 Technologies
 * TypeScript
