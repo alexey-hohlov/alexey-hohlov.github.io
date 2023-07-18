@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 on:
-  # push:
-  #   branches: [ main ]
+  push:
+    branches: [ main ]
   pull_request:
     types: closed
     branches: [main]
@@ -22,8 +22,9 @@ jobs:
           git config --global user.name 'Alexey Hohlov'
           git config --global user.email 'alexey.hohl0v@yandex.ru'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          CI="" yarn deploy
+          yarn deploy
         env:
+          CI: false
           REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}
           REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}
           REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}

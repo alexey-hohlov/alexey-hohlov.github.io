@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { EmailPopup, Form, Button } from '../../components';
+import { EmailPopup, Form } from '../../components';
 import styles from './Contacts.module.scss';
 import { scale, slideFromLeft, slideFromRight } from '../../utils/animations';
 const Contacts: React.FC = () => {

@@ -4,7 +4,6 @@ import { DoneIcon, ErrorIcon, LoadingSpinner } from '../../assets';
 import { useAppSelector } from '../../hooks/reduxHooks';
 import styles from './EmailPopup.module.scss';
 import {
-    appear,
     loadingSpinner,
     scale,
     slideFromBottom,
