@@ -32,5 +32,5 @@ Go to [http://localhost:3000](http://localhost:3000) to see result
 ## 🛠️ ToDo
 * Github workflow better config ⏳
 * Re-deploy scheme ✅
-* Styles fixes for Safari ⏳
+* Styles fixes for Safari ✅
 * General cleanup ⏳
