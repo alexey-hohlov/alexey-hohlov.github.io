@@ -1,10 +1,7 @@
-<h1 align="center">My personal web-page</h1>
+# My personal web-page
+A web page with information about me, my professional skills, and ways to contact me
 
-<p align="center">A web page with information about me, my professional skills, and ways to contact me</p>
-
-<div align="center">
-  <img width="600" align="center" alt="Снимок экрана 2023-07-18 в 05 22 01" src="https://github.com/alexey-hohlov/alexey-hohlov.github.io/assets/79412122/03867d91-8ab2-4638-bc07-7ef6628bfa51">
-</div>
+[Here is](https://alexey-hohlov.github.io/) a live demo, deployed on GitHub Pages 🌎
 
 ## 💻 Technologies
 * TypeScript
@@ -31,3 +28,9 @@ yarn start
 ```
 
 Go to [http://localhost:3000](http://localhost:3000) to see result
+
+## 🛠️ ToDo
+* Github workflow better config ⏳
+* Re-deploy scheme ⏳
+* Styles fixes for Safari ⏳
+* General cleanup ⏳
