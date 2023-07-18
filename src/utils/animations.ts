@@ -49,7 +49,7 @@ export const slideFromBottom = {
 };
 
 export const scale = {
-    hidden: { opacity: 0, scale: 0 },
+    hidden: { opacity: 0, scale: 0.5 },
     visible: (custom: number) => ({
         opacity: 1,
         scale: 1,
