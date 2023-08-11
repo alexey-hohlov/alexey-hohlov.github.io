@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
                         использованием препроцессоров, уделяю внимание семантике
                     </motion.p>
                     <motion.p variants={slideFromLeft} custom={3}>
-                        Владею React и Redux, а так же другими, представленными
+                        Владею React и Redux, а также другими, представленными
                         здесь, технологиями
                     </motion.p>
                 </div>
