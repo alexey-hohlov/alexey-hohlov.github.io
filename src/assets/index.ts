@@ -16,6 +16,8 @@ export { ReactComponent as HtmlIcon } from './icons/skills-icons/html-icon.svg';
 export { ReactComponent as FigmaIcon } from './icons/skills-icons/figma-icon.svg';
 export { ReactComponent as GitIcon } from './icons/skills-icons/git-icon.svg';
 export { ReactComponent as CssIcon } from './icons/skills-icons/css-icon.svg';
+export { ReactComponent as VueIcon } from './icons/skills-icons/vue-icon.svg';
+export { ReactComponent as TailwindIcon } from './icons/skills-icons/tailwind-icon.svg';
 export { ReactComponent as SkillsFooter } from './images/skills-footer.svg';
 
 // footer icons
