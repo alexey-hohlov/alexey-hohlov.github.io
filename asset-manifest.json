@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b03f9df6.css",
+    "main.css": "/static/css/main.73402c0f.css",
     "main.js": "/static/js/main.a4e142c7.js",
     "static/media/Raleway-Light.ttf": "/static/media/Raleway-Light.58bcdae09d89ccd8d086.ttf",
     "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
@@ -35,11 +35,11 @@
     "static/media/code-icon.svg": "/static/media/code-icon.b3a46f89980ebee8cf10d133fb646bfa.svg",
     "static/media/double-arrow-icon.svg": "/static/media/double-arrow-icon.dab1f307fc3e575b7eba58cbcb980b5b.svg",
     "static/media/skills-footer.svg": "/static/media/skills-footer.f244a3691a983f85561ae0db6b197abf.svg",
-    "main.b03f9df6.css.map": "/static/css/main.b03f9df6.css.map",
+    "main.73402c0f.css.map": "/static/css/main.73402c0f.css.map",
     "main.a4e142c7.js.map": "/static/js/main.a4e142c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.b03f9df6.css",
+    "static/css/main.73402c0f.css",
     "static/js/main.a4e142c7.js"
   ]
 }
