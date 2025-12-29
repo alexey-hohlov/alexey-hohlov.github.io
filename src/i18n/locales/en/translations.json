@@ -1,0 +1,97 @@
+{
+  "navbar": {
+    "items": [
+      {
+        "title": "About",
+        "sectionId": "about"
+      },
+      {
+        "title": "Skills",
+        "sectionId": "skills"
+      },
+      {
+        "title": "Projects",
+        "sectionId": "projects"
+      },
+      {
+        "title": "Contacts",
+        "sectionId": "contacts"
+      }
+    ]
+  },
+  "footer": {
+    "name": "Alexey Hohlov",
+    "description": "Turning ideas into functional and responsive interfaces.\n Ready to build great products.",
+    "contactMe": "Get in touch",
+    "github": "My GitHub",
+    "toTop": "Back to top",
+    "madeBy": "ALEXEY HOHLOV <accent>©2025</accent>"
+  },
+  "greetings": {
+    "title": "Welcome",
+    "subtitle": "Clean code. <accent>Efficient solutions</accent>",
+    "name": "<accent>Alexey Hohlov</accent>. Frontend Developer",
+    "description": "Discover my projects and skills",
+    "button": "Continue"
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I specialize in developing the <accent>frontend</accent> of websites and <accent>web applications</accent>, with a strong focus on <accent>clean</accent>, maintainable <accent>code</accent>, modern practices, and thoughtful architecture. I build <accent>interfaces</accent> that not only look good but also work <accent>reliably</accent>. By education, I am a network engineer, which gives me a broad technical background.",
+    "subtext": "On this page, you can <accent>explore</accent> my <accent>projects</accent>, technical <accent>skills</accent>, and find my <accent>contact</accent> details to get in touch."
+  },
+  "skills": {
+    "title": "Skills",
+    "text": "Core Frameworks: <blue>React</blue>, <green>Vue</green>. <accent>Development</accent> with TypeScript. <accent>Semantic</accent> and cross-browser <accent>markup</accent> using CSS/<accent>Sass</accent>. Deep understanding of their ecosystems — state management, routing, animations, validation, <accent>API</accent> integration.",
+    "subtext": "Extensive experience in <accent>adapting</accent> UI libraries and developing custom <accent>component</accent> systems. I build reusable, well-documented, and <accent>accessible</accent> UI kits.",
+    "details": {
+      "title": "Detailed Tech Stack",
+      "items": [
+        {
+          "header": "Languages & Core Frameworks",
+          "content": "JavaScript, TypeScript, React, Vue.js (Vue3 + Composition API), Next.js"
+        },
+        {
+          "header": "Styling & Animation",
+          "content": "Sass, SCSS, CSS3, Tailwind CSS, Motion, React Transition Group"
+        },
+        {
+          "header": "State Management",
+          "content": "Redux, Redux Toolkit, Vuex, Pinia"
+        },
+        {
+          "header": "Form Handling",
+          "content": "React Hook Form, Yup, Formik, VeeValidate"
+        },
+        {
+          "header": "Tools & Ecosystem",
+          "content": "React Router, Material UI, Radix UI, PrimeReact, Swiper, i18next, dnd-kit, Day.js, EmailJS, uuid, Vue Draggable, Vue Router, Axios"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "text": "This section showcases <accent>examples</accent> of my work. Each <accent>project</accent> includes a live demo of the deployed <accent>application</accent>, its tech stack, and direct links to its GitHub <accent>repositories</accent>. Here you can evaluate not only the final <accent>result</accent> but also my <accent>approach</accent> to problem-solving, code <accent>organization</accent>, and attention to <accent>detail</accent>."
+  },
+  "contacts": {
+    "title": "Contacts",
+    "text": "Let's <accent>build</accent> something outstanding <accent>together</accent>!",
+    "subtext": "Prefer <accent>other</accent> ways to get in touch? You can <accent>reach out</accent> to me <accent>directly</accent>, via social media, or through <accent>messengers</accent>. You'll find all my <accent>contact</accent> details <accent>below</accent>.",
+    "button": "Submit",
+    "placeholders": {
+      "email": "Email",
+      "name": "What is your name?",
+      "message": "Your message"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "minLength": "Minimum number of characters - {{count}}",
+    "email": "Invalid email format"
+  },
+  "status": {
+    "loading": "Sending...",
+    "success": "Sent!",
+    "error": "Something went wrong... Please try again later"
+  }
+}

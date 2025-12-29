@@ -1,0 +1,20 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer {
+  background: rgb(var(--secondary));
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  max-width: 500px;
+  width: 100%;
+  min-height: 520px;
+}

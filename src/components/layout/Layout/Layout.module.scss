@@ -1,0 +1,57 @@
+@use '@/styles/variables' as vars;
+
+.layout {
+  background: rgb(var(--primary));
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+
+    @media (min-width: vars.$md) {
+      font-size: 68px;
+    }
+  }
+
+  h3 {
+    font-size: 38px;
+    font-weight: 700;
+
+    @media (min-width: vars.$md) {
+      font-size: 44px;
+    }
+  }
+
+  h4 {
+    font-size: 26px;
+    font-weight: 600;
+
+    @media (min-width: vars.$md) {
+      font-size: 30px;
+    }
+  }
+
+  section {
+    scroll-margin-top: 70px;
+  }
+
+  @media (min-width: vars.$lg) {
+    font-size: 26px;
+  }
+}
+
+.wrapper {
+  padding: 0 15px;
+}
+
+.container {
+  position: relative;
+  max-width: vars.$xl;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}

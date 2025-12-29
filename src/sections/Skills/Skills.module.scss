@@ -1,0 +1,37 @@
+@use '@/styles/variables' as vars;
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+
+  @media (min-width: vars.$lg) {
+    flex-direction: row;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-shrink: 0;
+
+  @media (min-width: vars.$lg) {
+    width: 50%;
+  }
+}
+
+.blue {
+  color: #58c4dc;
+}
+
+.green {
+  color: #42b883;
+}

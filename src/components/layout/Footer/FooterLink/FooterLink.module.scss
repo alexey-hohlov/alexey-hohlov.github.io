@@ -1,0 +1,11 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  svg {
+    width: 25px;
+    height: auto;
+    color: rgb(var(--primary));
+  }
+}

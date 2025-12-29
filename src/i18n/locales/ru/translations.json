@@ -1,0 +1,97 @@
+{
+  "navbar": {
+    "items": [
+      {
+        "title": "Обо мне",
+        "sectionId": "about"
+      },
+      {
+        "title": "Навыки",
+        "sectionId": "skills"
+      },
+      {
+        "title": "Проекты",
+        "sectionId": "projects"
+      },
+      {
+        "title": "Контакты",
+        "sectionId": "contacts"
+      }
+    ]
+  },
+  "footer": {
+    "name": "Алексей Хохлов",
+    "description": "Превращаю идеи в работающие и отзывчивые интерфейсы.\n Готов внести вклад в создание отличных продуктов.",
+    "contactMe": "Связаться со мной",
+    "github": "Moй GitHub",
+    "toTop": "Наверх",
+    "madeBy": "ALEXEY HOHLOV <accent>©2025</accent>"
+  },
+  "greetings": {
+    "title": "Добро пожаловать",
+    "subtitle": "Чистый код. <accent>Эффективные решения</accent>",
+    "name": "<accent>Алексей Хохлов</accent>. Frontend-разработчик",
+    "description": "Познакомьтесь с моими работами и навыками",
+    "button": "Далее"
+  },
+  "about": {
+    "title": "Обо мне",
+    "text": "Занимаюсь разработкой <accent>frontend</accent>-части сайтов и <accent>веб-приложений</accent> с акцентом на <accent>чистый</accent>, поддерживаемый <accent>код</accent>, современные практики и продуманную архитектуру. Я создаю <accent>интерфейсы</accent>, которые не только выглядят хорошо, но и работают <accent>стабильно</accent>. По образованию — сетевой инженер, имею обширный технический бэкграунд.",
+    "subtext": "На этой странице вы можете <accent>ознакомиться</accent> с моими <accent>проектами</accent>, техническими <accent>навыками</accent> и найти <accent>контакты</accent> для связи со мной."
+  },
+  "skills": {
+    "title": "Навыки",
+    "text": "Основные фреймворки: <blue>React</blue>, <green>Vue</green>. <accent>Разработка</accent> на TypeScript. <accent>Семантическая</accent> и кроссбраузерная <accent>верстка</accent> на CSS/<accent>Sass</accent>. Глубокое понимание экосистем — управление состоянием, маршрутизация, анимации, валидация, работа с <accent>API</accent>.",
+    "subtext": "Обширный опыт <accent>адаптации</accent> UI-библиотек и разработки собственных систем <accent>компонентов</accent>. Создаю переиспользуемые, документированные и <accent>доступные</accent> UI-киты.",
+    "details": {
+      "title": "Подробный стек технологий",
+      "items": [
+        {
+          "header": "Языки и основные фреймворки",
+          "content": "JavaScript, TypeScript, React, Vue.js (Vue3 + Composition API), Next.js"
+        },
+        {
+          "header": "Стили и анимации",
+          "content": "Sass, SCSS, CSS3, Tailwind CSS, Motion, React Transition Group"
+        },
+        {
+          "header": "Управление состоянием",
+          "content": "Redux, Redux Toolkit, Vuex, Pinia"
+        },
+        {
+          "header": "Работа с формами",
+          "content": "React Hook Form, Yup, Formik, VeeValidate"
+        },
+        {
+          "header": "Инструменты и экосистема",
+          "content": "React Router, Material UI, Radix UI, Prime React, Swiper, i18next, dnd kit, Day.js, EmailJS, uuid, Vue Draggable, Vue Router, Axios"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Проекты",
+    "text": "В этом разделе представлены <accent>примеры</accent> моих работ. Каждый <accent>проект</accent> включает live-демонстрацию с развернутой версией <accent>приложения</accent>, технологический стек и прямые ссылки на <accent>репозитории</accent> GitHub. Здесь можно оценить не только конечный <accent>результат</accent>, но и <accent>подход</accent> к решению задач, организацию <accent>кода</accent> и внимание к <accent>деталям</accent>."
+  },
+  "contacts": {
+    "title": "Контакты",
+    "text": "Давайте <accent>создадим</accent> что-то выдающееся <accent>вместе</accent>!",
+    "subtext": "Предпочитаете <accent>другие</accent> способы связи? Вы можете <accent>связаться</accent> со мной <accent>напрямую</accent>, через социальные сети или <accent>мессенджеры</accent>. Все мои <accent>контакты</accent> вы найдете <accent>ниже</accent>.",
+    "button": "Отправить",
+    "placeholders": {
+      "email": "Email",
+      "name": "Как вас зовут?",
+      "message": "Ваше сообщение"
+    }
+  },
+  "validation": {
+    "required": "Заполните это поле",
+    "minLength": "Минимальное количество символов - {{count}}",
+    "email": "Некорректный формат email"
+  },
+  "status": {
+    "loading": "Загрузка...",
+    "success": "Отправлено!",
+    "error": "Что-то пошло не так... Попробуйте позже"
+  }
+}

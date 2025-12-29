@@ -1,0 +1,49 @@
+@use '@/styles/mixins' as mix;
+@use '@/styles/variables' as vars;
+
+.greetings {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  position: relative;
+}
+
+.content {
+  z-index: 1;
+  max-width: vars.$xl;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  .description {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+
+.button {
+  @include mix.btnFilledContrast;
+  width: 100%;
+  margin-top: 10px;
+
+  svg {
+    fill: rgb(var(--primary));
+  }
+}
+
+.accentColor {
+  color: rgb(var(--accent));
+  font-weight: 600;
+}

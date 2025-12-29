@@ -1,16 +1,11 @@
-// components exports //
+// components export
 
-export { default as Bullet } from './Bullet/Bullet';
-export { default as SkillsItem } from './SkillsItem/SkillsItem';
-export { default as Form } from './Form/Form';
-export { default as Navbar } from './Navbar/Navbar';
-export { default as Footer } from './Footer/Footer';
-export { default as UpButton } from './UpButton/UpButton';
-export { default as SocialItem } from './SocialItem/SocialItem';
-export { default as EmailPopup } from './EmailPopup/EmailPopup';
-
-// reusable components //
+// common
 export { default as Button } from './common/Button/Button';
 export { default as Input } from './common/Input/Input';
-export { default as TextArea } from './common/TextArea/TextArea';
-export { default as Modal } from './common/Modal/Modal';
+export { default as TextArea } from './common/Input/TextArea';
+
+// layout
+export { default as Layout } from './layout/Layout/Layout';
+export { default as Footer } from './layout/Footer/Footer';
+export { default as Navbar } from './layout/Navbar/Navbar';

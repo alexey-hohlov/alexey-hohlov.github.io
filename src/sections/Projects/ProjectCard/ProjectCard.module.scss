@@ -1,0 +1,111 @@
+.card {
+  aspect-ratio: 4 / 3;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  color: rgb(255, 250, 227);
+  &::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      rgba(48, 50, 61, 0.85) 0%,
+      rgba(48, 50, 61, 0.75) 20%,
+      rgba(48, 50, 61, 0.4) 50%,
+      rgba(48, 50, 61, 0.1) 100%
+    );
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    .title {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition-delay: 0s;
+    }
+
+    .hoverContent {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.2s;
+    }
+  }
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
+  font-size: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  transition-delay: 0.2s;
+
+  right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hoverContent {
+  cursor: default;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  opacity: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  transition-delay: 0s;
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .technologies {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  svg {
+    width: 22px;
+    color: rgb(255, 250, 227);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: max-content;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgb(var(--accent));
+    }
+  }
+}

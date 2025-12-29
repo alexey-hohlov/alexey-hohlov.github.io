@@ -1,0 +1,27 @@
+:root {
+  // dark mode
+  --primary: 48, 50, 61;
+  --secondary: 55, 56, 67;
+  --contrast: 255, 250, 227;
+  --accent: 205, 137, 135;
+  --support: 117, 159, 188;
+
+  // common
+  --shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='light'] {
+  // light mode
+  --primary: 249, 240, 235;
+  --secondary: 252, 245, 241;
+  --contrast: 35, 87, 137;
+  --accent: 205, 137, 135;
+  --support: 158, 123, 155;
+}
+
+// breakpoints
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;

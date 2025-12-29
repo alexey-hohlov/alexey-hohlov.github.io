@@ -1,30 +1,36 @@
 import { useController } from 'react-hook-form';
+
 import styles from './Input.module.scss';
-import { IValidations } from '../../../types/formTypes';
 
 interface Props {
-    placeholder: string;
-    name: string;
-    validations: IValidations;
+  name: string;
+  type?: string;
+  placeholder: string;
+  defaultValue?: string;
 }
 
-const Input: React.FC<Props> = ({ placeholder, name, validations }) => {
-    const {
-        field,
-        fieldState: { error },
-    } = useController({ name, rules: validations });
+const Input: React.FC<Props> = ({
+  type = 'text',
+  placeholder,
+  name,
+  defaultValue = '',
+}) => {
+  const {
+    field,
+    fieldState: { error },
+  } = useController({ name, defaultValue });
 
-    return (
-        <div className={styles.wrapper}>
-            <input
-                className={`${styles.input} ${error && styles.error}`}
-                type='text'
-                {...field}
-                placeholder={placeholder}
-            />
-            {error && <span>{error.message}</span>}
-        </div>
-    );
+  return (
+    <div className={styles.wrapper}>
+      <input
+        type={type}
+        className={`${styles.input} ${error && styles.error}`}
+        placeholder={placeholder}
+        {...field}
+      />
+      <span>{error?.message}</span>
+    </div>
+  );
 };
 
 export default Input;

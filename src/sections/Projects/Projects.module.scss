@@ -1,0 +1,17 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  overflow: hidden;
+
+  @media (min-width: 870px) {
+    gap: 15px;
+  }
+}

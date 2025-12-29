@@ -1,0 +1,11 @@
+main,
+div,
+footer {
+  transition: background-color 400ms ease-in-out;
+}
+
+button,
+a,
+input {
+  transition: none;
+}

@@ -1,0 +1,27 @@
+@use '@/styles/variables' as vars;
+
+.carousel {
+  display: grid;
+
+  :global {
+    .swiper {
+      max-width: 100%;
+    }
+
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+
+    .swiper-free-mode > .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+      width: 100px;
+
+      @media (min-width: vars.$md) {
+        width: 120px;
+      }
+    }
+  }
+}

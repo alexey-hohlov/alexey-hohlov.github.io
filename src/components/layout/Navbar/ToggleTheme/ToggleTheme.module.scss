@@ -1,0 +1,16 @@
+@use '@/styles/variables' as vars;
+
+.button {
+  flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+
+  svg {
+    color: rgb(var(--contrast));
+    transition: color 150ms ease;
+
+    &:hover {
+      color: rgb(var(--accent));
+    }
+  }
+}

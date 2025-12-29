@@ -1,76 +1,19 @@
 .button {
-    border-radius: 7px;
-    background: transparent;
-    cursor: pointer;
-    user-select: none;
-    font-size: 1em;
+  width: max-content;
+  height: max-content;
+  padding: 10px 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
 
-    &:disabled {
-        opacity: 0.5;
-        pointer-events: none;
-    }
-}
+  &:active {
+    opacity: 0.95;
+    scale: 0.999;
+  }
 
-.white {
-    border: solid 1px white;
-    color: white;
-    transition: background 150ms linear;
-
-    &:hover {
-        background: white;
-        color: #1f2041;
-    }
-
-    &:active {
-        background: transparent;
-        color: white;
-    }
-}
-
-.crimson {
-    border: solid 1px #e73680;
-    color: #e73680;
-    transition: background 150ms linear;
-
-    &:hover {
-        background: #e73680;
-        color: white;
-    }
-
-    &:active {
-        background: transparent;
-        color: #e73680;
-    }
-}
-
-.blue {
-    border: solid 1px #5688c7;
-    color: #5688c7;
-    transition: background 150ms linear;
-
-    &:hover {
-        background: #5688c7;
-        color: white;
-    }
-
-    &:active {
-        background: transparent;
-        color: #5688c7;
-    }
-}
-
-.teal {
-    border: solid 1px #61f4de;
-    color: #61f4de;
-    transition: background 150ms linear;
-
-    &:hover {
-        background: #61f4de;
-        color: #1F2041;
-    }
-
-    &:active {
-        background: transparent;
-        color: #61f4de;
-    }
+  svg {
+    flex-shrink: 0;
+  }
 }

@@ -1,0 +1,37 @@
+@use '@/styles/variables' as vars;
+
+.status {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  svg {
+    width: 150px;
+    height: 150px;
+    fill: rgb(var(--contrast));
+  }
+
+  span {
+    text-align: center;
+  }
+
+  .error {
+    fill: rgb(var(--accent));
+  }
+
+  .loader {
+    animation: rotate 1.5s linear infinite;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
