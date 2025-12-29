@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
               scrollTo(SECTION_ID.GREETINGS);
             }}
           >
-            <img src={logo} alt='logo' />
+            <img src={logo} alt='logo' className={styles.logo} />
           </a>
           <ul className={styles.list}>
             {items.map(item => (
