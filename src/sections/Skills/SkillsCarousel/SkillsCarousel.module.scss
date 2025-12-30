@@ -2,7 +2,8 @@
 
 .carousel {
   display: grid;
-
+  z-index: 0;
+  
   :global {
     .swiper {
       max-width: 100%;
