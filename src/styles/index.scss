@@ -2,7 +2,6 @@
 @use './fonts';
 @use './globals';
 @use './theme-transitions';
-// @use './variables';
 
 :root {
   font-family: 'Raleway', sans-serif;
@@ -13,4 +12,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: rgb(var(--primary));
 }
