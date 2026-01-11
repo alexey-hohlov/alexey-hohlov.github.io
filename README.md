@@ -46,7 +46,7 @@ This is the new version of my portfolio website. The project has been completely
 * Switching between dark and light themes
 * Modern, minimalist design
 
-* ## 💻 Tech Stack
+## 💻 Tech Stack
 * TypeScript
 * React
 * Vite
